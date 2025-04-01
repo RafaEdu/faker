@@ -1,3 +1,16 @@
+INSERT INTO fabricantes (id, nome) VALUES
+(1, 'Toyota'),
+(2, 'Volkswagen'),
+(3, 'Ford'),
+(4, 'Chevrolet'),
+(5, 'Honda'),
+(6, 'Hyundai'),
+(7, 'Nissan'),
+(8, 'BMW'),
+(9, 'Mercedes-Benz'),
+(10, 'Fiat');
+
+
 INSERT INTO modelo (idmodelo, descricao, fabricante_idfabricante) VALUES
 (1, 'Corolla', 1),
 (2, 'Civic', 5),
