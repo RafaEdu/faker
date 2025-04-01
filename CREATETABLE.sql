@@ -1,3 +1,9 @@
+CREATE TABLE tipo_veiculo (
+    idtipo_veiculo INT PRIMARY KEY,
+    descricao VARCHAR(150) NOT NULL,
+    valor DECIMAL(10,2) NOT NULL
+);
+
 CREATE TABLE estado (
     idestado INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -31,13 +37,7 @@ CREATE TABLE veiculos (
     tipo_veiculo_idtipo_veiculo INT NOT NULL,
     CONSTRAINT fk_modelo FOREIGN KEY (modelo_idmodelo) REFERENCES modelo(idmodelo),
     CONSTRAINT fk_cidade FOREIGN KEY (cidade_idcidade) REFERENCES cidade(idcidade),
-    CONSTRAINT fk_tipo_veiculo FOREIGN KEY (tipo_veiculo_idtipo_veiculo) REFERENCES tipo_veiculo(idtipo_veiculo),
-);
-
-CREATE TABLE tipo_veiculo (
-    idtipo_veiculo INT PRIMARY KEY,
-    descricao VARCHAR(150) NOT NULL,
-    valor DECIMAL(10,2) NOT NULL,
+    CONSTRAINT fk_tipo_veiculo FOREIGN KEY (tipo_veiculo_idtipo_veiculo) REFERENCES tipo_veiculo(idtipo_veiculo)
 );
 
 CREATE TABLE praca (
