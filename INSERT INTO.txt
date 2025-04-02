@@ -1,4 +1,4 @@
-INSERT INTO fabricantes (id, nome) VALUES
+INSERT INTO fabricante (idfabricante, nome) VALUES
 (1, 'Toyota'),
 (2, 'Volkswagen'),
 (3, 'Ford'),
