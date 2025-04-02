@@ -6,7 +6,6 @@ CREATE TABLE tipo_veiculo (
 
 CREATE TABLE estado (
     idestado INT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
     sigla VARCHAR(10) NOT NULL
 );
 
